@@ -1,0 +1,163 @@
+/* 类选择器可以写多个，使用逗号隔开 */
+/* 空格后面是子元素 */
+.shop_icon, .shop_ww_icon, .three_icon span {
+	width:15px;
+	height:15px;
+	background-color:aqua;
+	display: inline-block;//以块的形式展现出来但不占行
+}
+
+/*设置所有店铺样式  */
+.shops{
+	width:1100px;
+	/* background-color:aliceblue; */
+	/* 设置div居中 */
+	margin-left:auto;
+	margin-right:auto;
+	/* 字号大小 */
+	font-size:14px;
+	color:black;
+	
+}
+/* 设置店铺名字位置 */
+/* 让名字和左右两边图标对齐 */
+.shop_name{
+	position:relative;
+	bottom:2px;
+	font-weight:600;
+}
+/* 设置店铺头上4个元素右外补丁 */
+.shop_checkbox, .shop_icon, .shop_name, .shop_ww_icon{
+	margin-right:18px;
+}
+/* 设置条目样式 */
+.item{
+	/* flex（弹性布局div本是独占行的，flex默认横向排开） */
+	display:flex;
+	/* 设置背景色 */
+	background-color:#FAFAFA;
+	/* 设置边框 */
+	border:1px solid #DAD9D9;
+	/* 给item条目添加一个内补丁 */
+	padding:20px;
+}
+
+/* 设置商品图片样式 */
+.item_img{
+	width:80px;
+	height:80px;
+	background-color:#00FFFF;
+}
+
+/* 设置header向下补丁 */
+.header{
+	margin-bottom:10px;
+	margin-left:21px;
+}
+/* 设置复选框，条目图片的右外补丁 */
+.item_checkbox, .item_img{
+	margin-right:20px;
+}
+
+/* 广告宣传的样式 */
+.promotion{
+	display: flex;
+	/* 纵向布局，将弹性布局横向改为纵向 */
+	flex-direction:column;
+	/* 调整内容，两端对齐 */
+	justify-content:space-between;
+	/* 调整宽度 */
+	width:250px;
+	/* 右外补丁 */
+	margin-right:50px;
+}
+/*sku样式  */
+.sku{
+	/* 右外补丁 */
+	margin-right:150px;
+}
+/* 单价 */
+.price{
+	/* 右外补丁 */
+	margin-right:50px;
+	font-weight:600;
+}
+/* 价格1灰色 */
+.price1{
+	color:#8A8989;
+}
+/* 价格2红色 */
+.price2{
+	color:red;
+}
+/* input输入框：数量框宽窄 */
+.quantity input {
+	width:30px;
+	height:20px;
+	text-align:center;
+}
+/*数量和总价右外补丁 */
+.quantity, .item_total_price{
+		margin-right:30px;
+}
+.quantity{
+	background-color:#DAD8D8;
+	height:25px;
+}
+.plus{
+	margin-right:1px;
+}
+/* 总价字体加粗 */
+.item_total_price{
+	font-weight:600;
+	color:#F31919;
+}
+.shop{
+	margin-top:20px;
+}
+
+.checkout{
+	display:flex;
+	justify-content:space-between;
+	background-color:#DAD8D8;
+	height:60px;
+	margin-top:20px;
+	padding-top:20px;
+}
+
+.checkall{
+	margin-right:100px;
+}
+.checkout2 span{
+	margin-left:27px;
+}
+
+.totaltext,.checkoutbtn{
+	margin-left:30px;
+}
+.checkoutbtn{
+	width:100px;
+	height:80px;
+	color:white;
+	background-color:black;
+	display:inline-block;
+	position:relative;
+	
+	text-align:center;
+	/* 设置行间距 */
+	line-height:75px;
+}
+.checkedcount,.totoal_price{
+	font-size:16px;
+	font-weight:600;
+	color:#F31919;
+}
+.checkout2{
+	position:relative;
+	bottom:20px;
+}
+
+.del:hover,.plus:hover,.minus:hover{
+	color:#F31919;
+	cursor:pointer;
+}
